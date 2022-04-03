@@ -10,8 +10,12 @@ const todo_date = date.getDate();
 const todo_month = date.getMonth();
 const todo_year = date.getFullYear();
 
-function Card() {
+function Card(props) {
+    console.log(props)
+     // const {cardText,cardDesc}=props
     return <div className="card">
+        <h2 className="cardTitle">{props.cardText}</h2>
+        <p className="cardDesc">{props.cardDesc}</p>
         <h2 className="cardTitle">{todoTitle}</h2>
         <p className="cardDesc">{todoDescription}</p>
         <p className="cardFooter">{todo_date + "/" + todo_month + "/" + todo_year}</p>
@@ -19,3 +23,8 @@ function Card() {
 }
 
 export default Card
+
+
+// const name=["tito",'rasel']
+//
+// const ["tito","rasel"]=name

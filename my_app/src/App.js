@@ -1,10 +1,14 @@
 import React from "react";
 import Card from "./components/card";
+import Data from "./data.json"
+
 
 function App() {
     return <div>
         <h1 className="headingStyle">To Do </h1>
-        <Card />
+        <Card cardText="call tito" cardDesc="tito data"/>
+        <Card/>
+        <Card/>
     </div>
 }
 
